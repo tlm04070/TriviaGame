@@ -9,29 +9,35 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="assets/css/style.css" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Geostar+Fill" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/javascript/app.js"></script>
 	<title>Trivia Game</title>
 </head>
 
 <body class="container">
-	<div class="jumbotron">
-		<div class="row">
-			<div class="col-md-12">
-				<h1>Stellar Trivia</h1>
-				<br>
-				<h3>T-Minus:</h3>
-			</div>
+		<section class="startDiv" id="start">
+				<div id="start button">
+					<a type="button" class="btn btn-lg btn-block">START</a>
+				</div> 
+			</section>
+<div class="jumbotron" id="game">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Stellar Trivia</h1>
+			<br>
+			<h3>T-Minus:</h3>
 		</div>
 	</div>
 </div>
-<div class="container">
+<div class="container" id="body">
 	<div class="row">
 		<div class="col-md-12">
 			<h4 id="question1">Question 1: &nbsp;&nbsp;Which type of celestial object emits bursts of energy at regular intervals?</h4>
-			<div class= "answers">
-			<label class="radio-inline"><input type="radio" name="optradio">Supernova</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Pulsar</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Gama ray burst</label>
-			<label class="radio-inline"><input type="radio" name="optradio">Red Giants</label>
+			<div class= "answers" id="first">
+			<label class="radio-inline"><input type="radio" name="answers1" id="supernova">Supernova</label>
+			<label class="radio-inline"><input type="radio" name="answers1" id="pulsar">Pulsar</label>
+			<label class="radio-inline"><input type="radio" name="answers1" id="gamaRayBurst">Gama ray burst</label>
+			<label class="radio-inline"><input type="radio" name="answers1" id="redGiants">Red Giants</label>
 			</div>
 			<br><br>
 		</div>
@@ -39,11 +45,11 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h4 id="question2">Question 2: &nbsp;&nbsp;Which force is nothing more than the bending of space and time?</h4>
-			<div class= "answers">
-				<label class="radio-inline"><input type="radio" name="optradio">Weak force</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Electromagnetic force</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Strong force</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Gravitational force</label>
+			<div class= "answers" id="second">
+				<label class="radio-inline"><input type="radio" name="answers2" id="weakForce">Weak force</label>
+				<label class="radio-inline"><input type="radio" name="answers2" id="electromagneticForce">Electromagnetic force</label>
+				<label class="radio-inline"><input type="radio" name="answers2" id="strong">Strong force</label>
+				<label class="radio-inline"><input type="radio" name="answers2" id="gravitationalForce">Gravitational force</label>
 			</div>
 			<br><br>
 		</div>
@@ -51,11 +57,11 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h4 id="question3">Question 3: &nbsp;&nbsp;What is the name of the nearest galaxy?</h4>
-			<div class= "answers">
-				<label class="radio-inline"><input type="radio" name="optradio">Centaurus A</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Whirlpool galaxy</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Andromeda</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Starburst galaxy</label>
+			<div class= "answers" id="third">
+				<label class="radio-inline"><input type="radio" name="answers3" id="centaurusA">Centaurus A</label>
+				<label class="radio-inline"><input type="radio" name="answers3" id="whirlpoolGalaxy">Whirlpool galaxy</label>
+				<label class="radio-inline"><input type="radio" name="answers3" id="andromeda">Andromeda</label>
+				<label class="radio-inline"><input type="radio" name="answers3" id="starburstGalaxy">Starburst galaxy</label>
 			</div>
 			<br><br>
 		</div>
@@ -63,11 +69,11 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h4 id="question4">Question 4: &nbsp;&nbsp;After which planet does the kyper belt reside?</h4>
-			<div class= "answers">
-				<label class="radio-inline"><input type="radio" name="optradio">Saturn</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Jupiter</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Neptune</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Uranus</label>
+			<div class= "answers" id="fourth">
+				<label class="radio-inline"><input type="radio" name="answers4" id="saturn">Saturn</label>
+				<label class="radio-inline"><input type="radio" name="answers4" id="jupiter">Jupiter</label>
+				<label class="radio-inline"><input type="radio" name="answers4" id="neptune">Neptune</label>
+				<label class="radio-inline"><input type="radio" name="answers4" id="uranus">Uranus</label>
 			</div>
 			<br><br>
 		</div>
@@ -75,11 +81,11 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h4 id="question5">Question 5: &nbsp;&nbsp;What is the name for the study of the structure of the universe?</h4>
-			<div class= "answers">
-				<label class="radio-inline"><input type="radio" name="optradio">Cosmology</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Astrophysics</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Astronomy</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Quantum mechanics</label>
+			<div class= "answers" id="fifth">
+				<label class="radio-inline"><input type="radio" name="answers5" id="cosmology">Cosmology</label>
+				<label class="radio-inline"><input type="radio" name="answers5" id="astrophysics">Astrophysics</label>
+				<label class="radio-inline"><input type="radio" name="answers5" id="astronomy">Astronomy</label>
+				<label class="radio-inline"><input type="radio" name="answers5" id="astronomy">Quantum mechanics</label>
 			</div>
 			<br><br>
 		</div>
@@ -87,11 +93,11 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h4 id="question6">Question 6: &nbsp;&nbsp;Which is the brightest comet in the solar system?</h4>
-			<div class= "answers">
-				<label class="radio-inline"><input type="radio" name="optradio">Comet Hyakutake</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Comet Encke</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Halley's Comet</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Comet Kohoutek</label>
+			<div class= "answers" id="sixth">
+				<label class="radio-inline"><input type="radio" name="answers6" id="cometHyakutake">Comet Hyakutake</label>
+				<label class="radio-inline"><input type="radio" name="answers6" id="cometEncke">Comet Encke</label>
+				<label class="radio-inline"><input type="radio" name="answers6" id="halleysComet">Halley's Comet</label>
+				<label class="radio-inline"><input type="radio" name="answers6" id="cometKohoutek">Comet Kohoutek</label>
 			</div>
 			<br><br>
 		</div>
@@ -99,11 +105,11 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h4 id="question7">Question 7: &nbsp;&nbsp;What is the name given to the super dense stars that sometimes result form a supernova?</h4>
-			<div class= "answers">
-				<label class="radio-inline"><input type="radio" name="optradio">Quasar</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Neutron star</label>
-				<label class="radio-inline"><input type="radio" name="optradio">White dwarf</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Compact star</label>
+			<div class= "answers" id="seventh">
+				<label class="radio-inline"><input type="radio" name="answers7" id="quasar">Quasar</label>
+				<label class="radio-inline"><input type="radio" name="answers7" id="neutron">Neutron star</label>
+				<label class="radio-inline"><input type="radio" name="answers7" id="whiteDwarf">White dwarf</label>
+				<label class="radio-inline"><input type="radio" name="answers7" id="compactStar">Compact star</label>
 			</div>
 			<br><br>
 		</div>
@@ -111,11 +117,11 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h4 id="question8">Question 8: &nbsp;&nbsp;What percent of the universe is dark matter?</h4>
-			<div class= "answers">
-				<label class="radio-inline"><input type="radio" name="optradio">32%</label>
-				<label class="radio-inline"><input type="radio" name="optradio">64%</label>
-				<label class="radio-inline"><input type="radio" name="optradio">50%</label>
-				<label class="radio-inline"><input type="radio" name="optradio">27%</label>
+			<div class= "answers" id="eighth">
+				<label class="radio-inline"><input type="radio" name="answers8" id="32%">32%</label>
+				<label class="radio-inline"><input type="radio" name="answers8" id="64%">64%</label>
+				<label class="radio-inline"><input type="radio" name="answers8" id="50%">50%</label>
+				<label class="radio-inline"><input type="radio" name="answers8" id="27%">27%</label>
 			</div>
 			<br><br>
 		</div>
@@ -123,11 +129,11 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h4 id="question9">Question 9: &nbsp;&nbsp;What is the closest star to the Sun?</h4>
-			<div class= "answers">
-				<label class="radio-inline"><input type="radio" name="optradio">Tau Ceti</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Epsilon Eridani</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Proxima Centauri</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Sirius A</label>
+			<div class= "answers" id="ninth">
+				<label class="radio-inline"><input type="radio" name="answers9" id="tauCeti">Tau Ceti</label>
+				<label class="radio-inline"><input type="radio" name="answers9" id="epsilonEridani">Epsilon Eridani</label>
+				<label class="radio-inline"><input type="radio" name="answers9" id="proximaCentauri">Proxima Centauri</label>
+				<label class="radio-inline"><input type="radio" name="answers9" id="siriusA">Sirius A</label>
 			</div>
 			<br><br>
 		</div>
@@ -135,18 +141,31 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h4 id="question10">Question 10: &nbsp;&nbsp;What is the largest amount of consecutive days that a human has spent in space?</h4>
-			<div class= "answers">
-				<label class="radio-inline"><input type="radio" name="optradio">438 days</label>
-				<label class="radio-inline"><input type="radio" name="optradio">312 days</label>
-				<label class="radio-inline"><input type="radio" name="optradio">661 days</label>
-				<label class="radio-inline"><input type="radio" name="optradio">282 days</label>
+			<div class= "answers" id="tenth">
+				<label class="radio-inline"><input type="radio" name="answers10" id="438days">438 days</label>
+				<label class="radio-inline"><input type="radio" name="answers10" id="312day">312 days</label>
+				<label class="radio-inline"><input type="radio" name="answers10" id="661days">661 days</label>
+				<label class="radio-inline"><input type="radio" name="answers10" id="282days">282 days</label>
 			</div>
 			<br><br>
 		</div>
 	</div>
 </div>
+	<div class="button">
+		<button type="button" class="btn btn-lg btn-block">Blast off!</button>
+	</div>
+	<div class="container" id="score">
+		<h1 id="results">Here's how you did!:</h1>
+		<br>
+		<h3 id="correct">Correct:</h3>
+		<br>
+		<h3 id="wrong">Missed:</h3>
+		<br>
+		<h3 id="unanswered">Unanswered:</h3>
+	</div>
 </body>
 </div>
+ 
 
 
 
