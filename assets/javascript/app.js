@@ -46,7 +46,7 @@ $(document).ready(function () {
             $("#correct").html("Correct:  " + correct);
             $("#wrong").html("Missed:  " + missed);
             unchecked();
-            // $("#unanswered").html("Unanswered:  " + unanswered);
+            
             
 
 
@@ -85,16 +85,6 @@ $(document).ready(function () {
   }
 
   
-    // $("#first").val(1);
-    // $("#second").val(1);
-    // $("#third").val(1);
-    // $("#fourth").val(1);
-    // $("#fifth").val(1);
-    // $("#sixth").val(1);
-    // $("#seventh").val(1);
-    // $("#eighth").val(1);
-    // $("#ninth").val(1);
-    // $("#tenth").val(1);
     
   
 
@@ -145,50 +135,6 @@ $(document).ready(function () {
 
 
 
-        // function unchecked(){ 
-
-        //     if($("#first).not("checked")){
-        //         unanswered++;
-        //         console.log(unanswered);
-        //     }
-            // }if($("#second").not("checked")){
-            //     unanswered++;
-            //     console.log(unanswered);
-                
-            // }if($("#third").not("checked")){
-            //     unanswered++;
-            //     console.log(unanswered);
-                
-            // }if($("#fourth").not("checked")){
-            //     unanswered++;
-            //     console.log(unanswered);
-                
-            // }if($("#fifth").not("checked")){
-            //     unanswered++;
-            //     console.log(unanswered);
-                
-            // }if($("#sixth").not("checked")){
-            //     unanswered++;
-            //     console.log(unanswered);
-                
-            // }if($("#seventh").not("checked")){
-            //     unanswered++;
-            //     console.log(unanswered);
-                
-            // }if($("#eighth").not("checked")){
-            //     unanswered++;
-            //     console.log(unanswered);
-                
-            // }if($("#ninth").not("checked")){
-            //     unanswered++;
-            //     console.log(unanswered);
-                
-            // }if($("#tenth").not("checked")){
-            //     unanswered++;
-            //     console.log(unanswered);
-                
-            // }
-        
     
 
 
